@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Buscaminas</string>
+    <string-array name="language">
+        <item>Español</item>
+        <item>Ingles</item>
+        <item>Aleman</item>
+    </string-array>
+    <string name="buscaminas_rules">
+    <b><u>Objetivo del Buscaminas</u></b> \n \n
+    El objetivo del juego es descubrir todas las celdas que no contienen minas en el tablero sin explotar ninguna mina.\n \n
+
+    <b><u>Normas del Buscaminas</u></b>\n \n
+
+    <b>1. Inicio del juego:</b>\n \n
+    - El jugador comienza con un tablero oculto.\n \n
+    - El primer clic del jugador nunca será una mina.\n \n
+
+    <b>2. Celdas y minas:</b>\n \n
+    - Cada celda puede contener una mina o estar vacía.\n \n
+    - Si una celda está vacía, puede mostrar un número que indica cuántas minas están en las celdas adyacentes.\n \n
+
+    <b>3. Descubrir celdas:</b>\n \n
+    - Al hacer clic en una celda:\n \n
+        <u>Si es una mina:</u> \n \n
+        el jugador pierde.\n \n
+        <u>Si no es una mina:</u>\n \n
+    - Si la celda tiene un número, muestra ese número.\n \n
+    - Si la celda no tiene un número, revela automáticamente todas las celdas vacías conectadas y los números adyacentes.\n \n
+
+    <b>4. Banderas:</b>\n \n
+    - Los jugadores pueden marcar celdas sospechosas con una bandera si creen que contienen una mina.\n \n
+    - El número de banderas disponibles es igual al número de minas en el tablero.\n \n
+    - Una celda marcada con una bandera no puede ser descubierta hasta que se retire la bandera.\n \n
+
+    <b>5. Victoria:</b>\n \n
+    - El jugador gana si descubre todas las celdas que no contienen minas, indiferentemente de si están marcadas o no con una bandera.\n \n
+
+    <b>6. Derrota:</b>\n \n
+    - El jugador pierde si hace clic en una celda con una mina, y todas las minas se revelan en el tablero.\n \n
+
+    <b><u>Consejos estratégicos</u></b>\n \n
+
+    <b>1. Primer clic seguro:</b>\n \n
+    - En la mayoría de las versiones, el primer clic nunca es una mina.\n \n
+
+    <b>2. Usa los números:</b>\n \n
+    - Los números son pistas clave para deducir dónde están las minas. Por ejemplo, si un "1" tiene solo una celda adyacente oculta, esa celda es una mina.\n \n
+
+    <b>3. Gestiona las banderas:</b>\n \n
+    - Usa las banderas para evitar hacer clic accidentalmente en celdas sospechosas.\n \n
+
+    <b>4. Piensa antes de actuar:</b>\n \n
+    - Si no estás seguro de una celda, intenta analizar otras áreas del tablero primero.\n \n
+
+        <b><u><p>Modo competitivo</p></u></b> \n \n
+        - El jugador compite contra otros jugadores a contrareloj.\n \n
+        - Las clasificaciones se dividen en categorías de dificultad y la posición por el tiempo en cumplir el objetivo.\n \n
+    ¡Buena suerte y diviértete!\n \n
+</string>
+
+
+</resources>

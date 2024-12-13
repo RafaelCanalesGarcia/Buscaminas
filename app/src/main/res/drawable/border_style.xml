@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="ExtraText">
+    <solid android:color="@color/gray" /> <!-- Color de fondo (blanco en este caso) -->
+    <stroke
+        android:width="2dp"
+        android:color="@color/Yellow" /> <!-- Borde (negro en este caso) -->" /><!-- Grosor del borde y color -->
+    <corners android:radius="30dp" /> <!-- Radio de las esquinas -->
+    <padding
+        android:bottom="10dp"
+        android:left="10dp"
+        android:right="10dp"
+        android:top="10dp" /> <!-- Padding interno -->
+</shape>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:color="@color/black"
+        android:id="@+id/settings"
+        android:icon="@drawable/settings_gear_svgrepo_com"
+        android:title="Configuración"
+        android:enabled="true"/>
+    <item
+        android:color="@color/black"
+        android:id="@+id/play"
+        android:icon="@drawable/trophy_svgrepo_com"
+        android:title="Jugar"
+        android:enabled="true"/>
+    <item
+        android:color="@color/black"
+        android:id="@+id/social"
+        android:icon="@drawable/about_svgrepo_com"
+        android:title="Social"
+        android:enabled="true"/>
+
+</menu>

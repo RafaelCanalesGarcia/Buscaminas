@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/sand">
+
+    <TextView
+        android:textSize="60dp"
+        android:layout_marginTop="70dp"
+        android:id="@+id/title"
+        style="@style/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BUSCAMINAS"
+        android:gravity="center"/>
+
+    <EditText
+        android:textColorHint="@color/Yellow"
+        android:id="@+id/user"
+        style="@style/editTextStyle"
+        android:layout_marginTop="90dp"
+        android:hint=" USUARIO"/>
+
+    <EditText
+        android:textColorHint="@color/Yellow"
+        android:id="@+id/password"
+        style="@style/passwordStyle"
+        android:layout_marginTop="20dp"
+        android:hint=" CONTRASEÑA"/>
+
+    <Button
+        android:id="@+id/butonLogin"
+        style="@style/buttonStyle"
+        android:onClick="LogIn"
+        android:text="Iniciar Sesion"
+        android:textSize="25dp"/>
+
+    <TextView
+        style="@style/optionStyle"
+        android:id="@+id/goToRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="20dp"
+        android:text="¿No tienes una cuenta? Regístrate"
+        android:textColor="@color/Yellow"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:onClick="goToRegister"/>
+    <TextView
+        style="@style/optionStyle"
+        android:id="@+id/forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="20dp"
+        android:text="No recuerdas la contraseña? Recuperala"
+        android:textColor="@color/Yellow"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:onClick="goToForgotPassword"/>
+
+</LinearLayout>

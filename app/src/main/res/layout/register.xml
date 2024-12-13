@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sand"
+    android:orientation="vertical"
+    android:rotation="0">
+    <TextView
+        android:textSize="60dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/textView"
+        style="@style/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BUSCAMINAS"
+        android:gravity="center"/>
+    <EditText
+        android:textColorHint="@color/Yellow"
+        android:id="@+id/correo_electronico"
+        style="@style/editTextStyle"
+        android:layout_marginTop="100dp"
+        android:hint="  Correo electrónico" />
+
+    <EditText
+        android:textColorHint="@color/Yellow"
+        android:id="@+id/nombre_de_usuario"
+        style="@style/editTextStyle"
+        android:layout_marginTop="30dp"
+        android:hint="  Nombre de usuario" />
+    <EditText
+        android:textColorHint="@color/Yellow"
+        android:id="@+id/contraseña"
+        style="@style/passwordStyle"
+        android:layout_marginTop="30dp"
+        android:hint="  Contraseña" />
+
+    <EditText
+        android:textColorHint="@color/Yellow"
+        android:id="@+id/repite_contraseña"
+        style="@style/passwordStyle"
+        android:layout_marginTop="30dp"
+        android:hint="  Repite contraseña" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/Yellow"
+            android:textSize="20dp"
+            android:text="Acepto los términos y condiciones"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/ButonRegister"
+        style="@style/buttonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#EF709D"
+        android:text="Registrarse"
+        android:onClick="registerButton"/>
+</LinearLayout>

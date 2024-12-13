@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="@color/gray"
+    app:cardCornerRadius="30dp"
+    app:cardElevation="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        style="@style/border_style">
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="2dp"/>
+        <TextView
+            android:id="@+id/nameOfFriend"
+            style="@style/friendsStyle"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp" />
+
+        <ImageView
+            android:src="@drawable/trophy_svgrepo_com"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/positionOfFriend"
+            style="@style/friendsStyle"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:textSize="16dp"/>
+
+        <ImageView
+            android:id="@+id/messageFriend"
+            android:src="@drawable/message_square_dots_svgrepo_com"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

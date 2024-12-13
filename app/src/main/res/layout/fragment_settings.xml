@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- musica -->
+<!-- efecto de sonido -->
+<!-- volumen si efecto de sonido activado-->
+<!-- Lenguaje -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/sand">
+
+    <LinearLayout
+        android:layout_gravity="center|top"
+        style="@style/border_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="CONFIGURACION"
+            android:textSize="30dp" />
+
+        <LinearLayout
+            style="@style/border_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/optionStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MUSICA"
+                    android:textColor="@color/Yellow"
+                    android:textSize="25dp" />
+
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/music_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:textOff="off"
+                    android:textOn="on" />
+
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/musicVolume"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            style="@style/border_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/optionStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SONIDO"
+                    android:textColor="@color/Yellow"
+                    android:textSize="25dp" />
+
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/sound_effect_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/soundVolume"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/border_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/optionStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IDIOMA"
+                    android:textColor="@color/Yellow"
+                    android:textSize="25dp" />
+
+
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/spinner_language"
+                style="@style/optionStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp" />
+        </LinearLayout>
+        <LinearLayout
+            style="@style/border_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                style="@style/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DIFICULTAD"
+                android:textColor="@color/Yellow"
+                android:textSize="25dp" />
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/radioDifficult">
+
+                <!-- RadioGroup para garantizar una selección única -->
+                <!-- Solo se puede seleccionar uno a la vez -->
+
+                <RadioButton
+                    android:id="@+id/lvlmuyfacil"
+                    style="@style/radiusoption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Muy fácil 8x14 - 10mines"
+                    android:textColor="@color/Yellow"
+                    android:textSize="14sp"/>
+
+                <RadioButton
+                    android:id="@+id/lvlfacil"
+                    style="@style/radiusoption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Facil     8x14 - 15mines"
+                    android:textColor="@color/Yellow"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/lvlmedio"
+                    style="@style/radiusoption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Medio     12x21 - 30mines"
+                    android:textColor="@color/Yellow"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/lvldificil"
+                    style="@style/radiusoption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Difícil   12x21 - 50mines"
+                    android:textColor="@color/Yellow"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/lvlmuydificil"
+                    style="@style/radiusoption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Experto   16x28 - 70mines"
+                    android:textColor="@color/Yellow"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/lvlimposible"
+                    style="@style/radiusoption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Imposible 16x28 - 100mines"
+                    android:textColor="@color/Yellow"
+                    android:textSize="14sp" />
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/border_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="50dp">
+
+            <LinearLayout
+                style="@style/optionStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MODO DE JUEGO"
+                    android:textColor="@color/Yellow"
+                    android:textSize="25dp" />
+
+                <CheckBox
+                    android:id="@+id/checkbox"
+                    style="@style/radiusoption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:checked="false"
+                    android:text="Modo competitivo" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

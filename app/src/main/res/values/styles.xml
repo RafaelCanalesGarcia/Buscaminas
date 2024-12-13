@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="title">
+        <item name="android:textColor">@color/Yellow</item>
+
+        <item name="android:fontFamily">@font/title</item>
+
+    </style>
+    <style name="titleToolbar">
+        <item name="android:textColor">@color/Yellow</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:fontFamily">@font/title</item>
+        border_style1
+    </style>
+    <style name="border_style">
+        <item name="android:textColor">@color/Yellow</item>
+        <item name="android:background">@drawable/border_style</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:fontFamily">@font/points</item>
+    </style>
+    <style name="editTextStyle">
+        <item name="android:font">@color/Yellow</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/Yellow</item>
+        <item name="android:fontFamily">@font/points</item>
+        <item name="android:background">@drawable/border_black</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+    <style name="buttonTextStyle">
+        <item name="android:font">@color/Yellow</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/Yellow</item>
+        <item name="android:fontFamily">@font/points</item>
+        <item name="android:background">@drawable/border_black</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+    <style name="friendsStyle">
+        <item name="android:font">@color/Yellow</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/Yellow</item>
+        <item name="android:fontFamily">@font/points</item>
+    </style>
+    <style name="optionStyle">
+        <item name="android:font">@color/Yellow</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/Yellow</item>
+        <item name="android:fontFamily">@font/points</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+    <style name="radiusoption">
+        <item name="android:font">@color/Yellow</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/Yellow</item>
+        <item name="android:fontFamily">@font/points</item>
+    </style>
+    <style name="passwordStyle">
+        <item name="android:fontFamily">@font/points</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/Yellow</item>
+        <item name="android:inputType">textPassword</item> <!-- textVisiblePassword es lo opuesto -->
+        <item name="android:background">@drawable/border_black</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:drawableRight">@drawable/eye</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:drawableTint">@color/Yellow</item>
+    </style>
+    <style name="buttonStyle">
+        <item name="android:textSize">30dp</item>
+        <item name="android:textColor">@color/Yellow</item>
+        <item name="android:fontFamily">@font/title</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">40dp</item>
+        <item name="android:backgroundTint">#EF709D</item>
+    </style>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>
